@@ -93,12 +93,6 @@ function hide(guild) {
         const mlem = guild.emojis.cache.find(emoji => emoji.name === 'mlem');
         await mlem.delete().catch(console.error);
 
-        // Re-verify Melody
-        const nut = guild.members.cache.find(member => member.user.tag === 'nut#3000');
-        const nutcam = guild.members.cache.find(member => member.user.tag === 'nutcam#7808');
-        await nut.roles.add(roles.verified).catch(console.error);
-        await nutcam.roles.add(roles.verified).catch(console.error);
-
         // Log cron job firing
         console.log('Hiding late night channels...');
 
