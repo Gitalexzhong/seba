@@ -40,7 +40,7 @@ async function handleCommands(message) {
     if (!command) return;
 
     // Get guild
-    const guild = message.client.guilds.cache.get(server.id);
+    const guild = message.guild;
 
     // Log all command uses
     const channel = (message.channel.type === 'text') ? message.channel.name : 'DM';
