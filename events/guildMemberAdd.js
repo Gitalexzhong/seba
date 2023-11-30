@@ -12,7 +12,8 @@ module.exports = async (client, member) => {
 // Send welcome message
 async function welcome(member) {
     const message = `Welcome to ${server.name}, ${member}! ` +
-        `Please read the <#${channels.rules}> and verify yourself [here](<<#${links.verificationForm}>>) to start chatting.`;
+        `Please read the <#${channels.rules}> and verify yourself [here](<${links.verificationForm}>) to start chatting.`;
+    console.log(member.guild.channels);
     await member.guild.channels.cache.get(channels.welcome)
         .send(message).catch(console.error);
 }
