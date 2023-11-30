@@ -61,8 +61,8 @@ Copy `config.json.example` to `config.json` and set the following values:
   * `verified` is the ID of the role to assign to members once they verify
   * `exec` is the ID of the exec or admin role to use privileged bot commands
 
-`links` have the links for specific forms or websites:
-    - `verificationForm` is the link to a online form used for verification
+* `links` have the links for specific forms or websites:
+  * `verificationForm` is the link to a online form used for verification
 
 ## Extra features
 
