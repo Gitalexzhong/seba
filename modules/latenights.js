@@ -35,12 +35,6 @@ function show(guild) {
         // Add mlem emoji
         await guild.emojis.create('./static/mlem.gif', 'mlem').catch(console.error);
 
-        // Un-verify Melody
-        const nut = guild.members.cache.find(member => member.user.tag === 'nut#3000');
-        const nutcam = guild.members.cache.find(member => member.user.tag === 'nutcam#7808');
-        await nut.roles.remove(roles.verified).catch(console.error);
-        await nutcam.roles.remove(roles.verified).catch(console.error);
-
         // Log cron job firing
         console.log('Showing late night channels...');
 
