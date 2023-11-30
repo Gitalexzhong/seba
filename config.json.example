@@ -23,5 +23,8 @@
     "roles": {
         "verified": "",
         "exec": ""
+    },
+    "links": {
+        "verificationForm": "https://forms.gle/AAABBBCCC"
     }
 }

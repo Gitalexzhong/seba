@@ -1,4 +1,4 @@
-const { server, channels, roles } = require('../config.json');
+const { server, channels, roles, links } = require('../config.json');
 
 // Export event so it can be used
 module.exports = async (client, member) => {
@@ -12,7 +12,7 @@ module.exports = async (client, member) => {
 // Send welcome message
 async function welcome(member) {
     const message = `Welcome to ${server.name}, ${member}! ` +
-        `Please read the <#${channels.rules}> and verify yourself to start chatting.`;
+        `Please read the <#${channels.rules}> and verify yourself [here](<<#${links.verificationForm}>>) to start chatting.`;
     await member.guild.channels.cache.get(channels.welcome)
         .send(message).catch(console.error);
 }
