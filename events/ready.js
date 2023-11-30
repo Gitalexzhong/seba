@@ -6,7 +6,7 @@ module.exports = (client) => {
     console.log(`Logged in as ${client.user.tag}!`);
 
     // Set status message
-    client.user.setActivity('linktr.ee/lofisoc', { type: 'PLAYING' });
+    client.user.setActivity('lo-fi Mixtape 2023: Dystopia', { type: 'PLAYING' });
 
     // Extra features
     if (client.extra) {
