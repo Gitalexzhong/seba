@@ -6,7 +6,7 @@ module.exports = (client) => {
     console.log(`Logged in as ${client.user.tag}!`);
 
     // Set status message
-    client.user.setActivity('fb.com/unswlofisoc', { type: 'PLAYING' });
+    client.user.setActivity('linktr.ee/lofisoc', { type: 'PLAYING' });
 
     // Extra features
     if (client.extra) {
