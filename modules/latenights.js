@@ -27,7 +27,7 @@ function show(guild) {
     // Make cron job to set up channels and return job for main to run
     return new CronJob(`00 ${i} ${H} * * *`, async () => {
         // Edit the guild icon
-        await guild.setIcon('./static/cursed_logo.png').catch(console.error);
+        await guild.setIcon('./static/ChrismasLofi.png').catch(console.error);
 
         // Add wenkiss emoji
         await guild.emojis.create('./static/wenkiss.png', 'wenkiss').catch(console.error);
@@ -83,7 +83,7 @@ function hide(guild) {
     // Make new cron job to pack down channels and return job for main to run
     return new CronJob(`00 ${i} ${H} * * *`, async () => {
         // Edit the guild icon
-        await guild.setIcon('./static/2023Mixtape.png').catch(console.error);
+        await guild.setIcon('./static/DystopiaChrismass.png').catch(console.error);
 
         // Remove wenkiss emoji
         const wenkiss = guild.emojis.cache.find(emoji => emoji.name === 'wenkiss');
