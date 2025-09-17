@@ -86,13 +86,13 @@ function hide(guild) {
         // Edit the guild icon
         await guild.setIcon('./static/2023Mixtape.png').catch(console.error);
 
-        // Remove wenkiss emoji
-        const wenkiss = guild.emojis.cache.find(emoji => emoji.name === 'wenkiss');
-        await wenkiss.delete().catch(console.error);
+        // // Remove wenkiss emoji
+        // const wenkiss = guild.emojis.cache.find(emoji => emoji.name === 'wenkiss');
+        // await wenkiss.delete().catch(console.error);
 
-        // Remove mlem emoji
-        const mlem = guild.emojis.cache.find(emoji => emoji.name === 'mlem');
-        await mlem.delete().catch(console.error);
+        // // Remove mlem emoji
+        // const mlem = guild.emojis.cache.find(emoji => emoji.name === 'mlem');
+        // await mlem.delete().catch(console.error);
 
         // Log cron job firing
         console.log('Hiding late night channels...');
