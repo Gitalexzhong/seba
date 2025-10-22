@@ -27,7 +27,7 @@ function show(guild) {
     // Make cron job to set up channels and return job for main to run
     return new CronJob(`00 ${i} ${H} * * *`, async () => {
         // Edit the guild icon
-        await guild.setIcon('./static/2025MixtapeElysium.png').catch(console.error);
+        await guild.setIcon('./static/2024MixtapeDystopia.png').catch(console.error);
         // await guild.setIcon('./static/christmas3.png').catch(console.error);
 
         // // Add wenkiss emoji
